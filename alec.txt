@@ -1,0 +1,121 @@
+
+
+Thom Riemersma  8:08 PM
+Hello, In the Ditto release job today 2 Dittos field with error "[de.hybris.platform.servicelayer.interceptor.impl.MandatoryAttributesValidator@7498c89e]:missing values for [kitEntryProduct] in model LynxKitEntryProductCartEntryModel (<unsaved>) to create a new LynxKitEntryProductCartEntry"
+Bundle 116159V had a set-up issue with a child item that Janet fixed this morning. I reran the Ditto release job and received the same error. Is there anything we need to do (e.g. recalc) to fix the broken relationship????
+
+Alec  8:12 PM
+chyecking
+8:15
+checking
+
+Alec  8:24 PM
+A293B03B-A0E8-48CE-A020-61DCD65FF78E-----8
+there are 3  LynxKitEntryProductCartEntry
+116066V
+116065V
+113803
+
+Thom Riemersma  8:41 PM
+Yes. 113803 had the set-up issue that was fixed but still get the same error when rerunning the job.
+
+Alec  9:10 PM
+8797928083037 -  116159V-113803
+9:10
+i fixed these dittos
+9:11
+please release dittos again
+9:14
+if it works i will fix others
+
+Thom Riemersma  9:15 PM
+I will run the job now.
+
+Alec  9:15 PM
+thanks
+
+Thom Riemersma  9:19 PM
+The Ditto released.
+:+1:
+1
+
+
+Ujjwal Anand  9:19 PM
+finally:+1:
+9:20
+Thanks all
+
+Alec  9:20 PM
+i will fix other cases
+
+Thom Riemersma  9:21 PM
+Thanks. Let me know hen done and will rerun the job.
+
+Alec  9:21 PM
+it is not related to this run
+
+Thom Riemersma  9:22 PM
+Did you fix both Dittos? I though you said you did 1. I'll check the other.
+
+Alec  9:24 PM
+i fixed both dittos
+
+Thom Riemersma  9:24 PM
+My bad. Both released.
+Alec, would you be able to join our daily stand-up at 9 am tomorrow and explain to the team what you did? Ujjwal will include you also so you know.
+:+1:
+1
+
+
+1 reply
+10 days agoView thread
+
+Alec  9:24 PM
+but there are in addition 5 dittos affected by this issue
+9:24
+sure
+
+Thom Riemersma  9:25 PM
+Ok. There were only 2 that failed today. The other Ditto's may be for a different release date.
+:+1:
+1
+
+
+1 reply
+10 days agoView thread
+
+Alec  9:30 PM
+it seems so
+
+Alec  10:08 PM
+select {ce.order}, {ce.info} 
+from {LynxKitEntryProductCartEntry! AS ce 
+    }
+where {ce.kitEntryProduct} is null
+
+Ujjwal Anand  5:50 PM
+Hi all
+5:51
+Once you start the call please drop a link I and Anuj will join
+
+Thom Riemersma  4:49 PM
+Hi @Alec, We have another 5 Dittos today with the missing key issue. My question is the key is missing on the template and carts. If we do the template will it propagate to the carts or do I need to manually do this for on both cart and template? (edited) 
+
+Thom Riemersma  4:59 PM
+@Alec -- Also I'm seeing item 113803 twice on the Ditto template. How do I know which is part of the Kit and which is standalone purchase? Assuming the one under the parent bundle item is the child?  For DItto F746DCC4-B724-43ED-A102-0A1318074EC6 (edited) 
+image.png 
+image.png
+
+
+
+Alec  5:50 PM
+checking
+
+Thom Riemersma  6:11 PM
+I updated 2 of the 5 Dittos from today both on cart and template (FYI).
+:+1:
+1
+
+
+Alec  6:14 PM
+thanks

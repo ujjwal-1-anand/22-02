@@ -1,0 +1,98 @@
+Agenda 
+	Payments
+	Types,
+	Flow,
+	authentication,
+	response types,
+	error handling
+
+
+Discussion
+
+
+Payment
+													  
+Digital payment is a transaction that takes place via digital or online modes, with no physical exchange of money involved.
+ This means that both parties, the payer and the payee, use electronic mediums to exchange money. Please note that digital payments can take place on the internet as well as on physical premises.
+ 
+Payment Types
+												
+	Accertify-> Accertify is a leading provider of fraud prevention, chargeback management, digital identity and payment gateway 
+	solutions to customers spanning ecommerce, financial services, and other diverse industries worldwide. Accertify’s layered 
+	risk platform, machine learning backbone, and rich reputational community data enables clients to address risk pain points
+	across the entire customer journey – from account creation, authentication, activity monitoring, payment, and disputes.	
+    
+	Paypal-> Paypal Gateway merchants can choose to process their online store payments with any major payment processor, bank,
+	or card association. Merchants who want total control over the checkout experience can host their own checkout pages and 
+	send transactions to PayPal using the open Payflow Gateway API or choose to have PayPal host the checkout pages and manage
+	security for sales and authorizations.
+	
+	Cardnet->Traditionally, banking was primarily local with very tight-knit rules to ensure that the process was safe and secure.
+	Over time, banking has become global, as exemplified by the CARDnet credit card processing network. Here is how CARDnet assists
+	with the management of a merchant account.
+
+Flow 
+   Accertify
+   
+   Amway will implement Accertify's Hosted Checkout payment integration option.
+   The Hosted Checkout model allows to collect payment details from your payer through an interaction 
+   hosted and displayed by the Accertify Payment Gateway. With this model of integration, you never see 
+   or handle payment details directly because these are collected by the hosted payment interface and submitted 
+   directly from the payer's browser to the Accertify Payment Gateway.
+
+
+   For the detailed flow of the payment can be seen showing all the methods which are permissible by business side 
+   https://amway.codefactori.com/confluence/display/TH/Accertify+AVS+verification+calls+to+the+gateway 	
+
+ paypal
+ 
+   PayPal Express Checkout  will be leverage as integration method.  The enhanced PayPal Express Checkout with In-Context
+   gives to end users a simplified checkout experience that keeps them local to the website throughout the payment authorization
+   process and lets them use their PayPal balance, bank account, or credit card to pay without sharing or entering any sensitive information on the site. 
+
+   for paypal we can refer the following 
+   https://amway.codefactori.com/confluence/display/TH/PayPal+Payment+Integration
+   
+   
+   Cardnet
+     
+	 CARDNET is the acquirer processor, with eCommerce integration with CARDNET - EVERTEC.  
+	 The integration with CARDNET is based on Hosted payment integration where the payment
+	 details of the payer are collected by an hosted payment interface and submitted directly from the payer's browser to the CARDNET Payment Gateway.
+     
+	 Amway will initiate  a authorization with automatic closing  transaction with CARDNET and as such we will be collecting the credit 
+	 card data at the last step of the check out process.
+	 
+	 cardnet flow 
+	 https://amway.codefactori.com/confluence/display/TH/Cardnet+Payment+Integration#CardnetPaymentIntegration-CheckoutflowandCreditCardProcessing
+	 
+	 
+	 
+Authorization
+
+
+ Accertify
+		   According to requirements need to verify Billing address before token creation. To do this we need send Billing address from payment form.
+		   Then based on response system will analyze if user can proceed or not. Unfortunately Accertify API do not support this validation within token creation call.
+		   That's why it will be one additional call to Accertify to Verify if sessionId and billing address matched and correct.  
+		   
+		   Authorization be implemented utilizing Accertify API. 
+		   The token captured during order placement process will be used for each of credit card transactions.
+		   The logical flow below captures payment transactions performed during checkout and order placement.
+		   On order placement we will Authorize the credit card.
+		  
+		  flow of the accertify authorization
+		  https://amway.codefactori.com/confluence/display/TH/Accertify+Integration#AccertifyIntegration-Authorization
+
+
+ PayPal
+		 An authorization transaction is a transaction where the payment is authorized with the buyer’s underlying funding source(s),
+		 but not immediately captured. If successful, PayPal will hold the funds against the buyer’s funding source(s) for window of time; 
+		 this window is known as the honor period. PayPal’s honor period is 3 days from the time the authorization occurred, and expires at 11:50PM, 
+		 Pacific Time, on the third day after the authorization occurred.
+		 Once an authorization has been created, the merchant must perform a capture to move the funds to their PayPal account. 
+		 The capture must be completed within a window of time; this window is known as the valid period. PayPal’s valid period is 29 days from the
+		 time the authorization occurred, and expires at
+		 11:50PM, Pacific Time, on the 29th day after the authorization occurred.
+		 Once the valid period has passed, an authorization cannot be captured.
+

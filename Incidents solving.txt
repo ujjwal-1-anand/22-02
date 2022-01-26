@@ -1,0 +1,112 @@
+ cant i login with test users to without ASM
+ 
+ 
+ 
+ coupons hybris me jaata hai to usse related issue bhi wahi jaega
+ 
+ 
+ 
+ network calls
+ splunk calls
+ ways to search in splunk
+ 
+ ES/Datalake/webmethods 
+ 
+ 
+ 
+ 
+ 
+ 2021-05-15T07:44:22.942 INFO [hybrisHTTP165] [com.amway.lynxcommonintegration.filter.LynxLoggingFilter] - [2021-05-15T07:44:22.881493] [REQUEST] [GET] [/amwaycommercewebservices/v2/lynx/users/86690100/account/8005730/carts/default]
+[2021-05-15T07:44:22.942700] [RESPONSE]
+{"type":"cartWsDTO","account":{"accountType":"AMWAY BUSINESS OWNER",
+"name":"Pierce, Franqui & Thomas, Shawn","status":"ACTIVE","uid":"8005730"},"affiliateOrderNumber":"010",
+"appliedOrderPromotions":[],"appliedProductPromotions":[],"appliedVouchers":[],"backOrderPriceData":{"businessVolume":0.0,
+"deliveryAmount":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"loyaltyReward":{"currencyIso":"USD",
+"formattedValue":"$0.00","priceType":"BUY","value":0.0},"loyaltyRewardPoints":0,"pointValue":0.0,"postagePresetFee":{"currencyIso":"USD",
+"formattedValue":"$0.00","priceType":"BUY","value":0.0},"promotionsAmount":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY",
+"value":0.0},"savingsAmount":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"subtotalAmount":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"taxAmount":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"taxDeliveryAmount":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalPrice":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalServiceFeesPrice":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalBackOrderEffectivePriceForTax":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0}},"backOrderPromotionDetailsContainer":{"promotionDetails":[],"totalBusinessVolume":0.0,"totalPointValue":0.0,"totalSavings":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0}},"bonusVolumeRecipient":{"accountType":"AMWAY BUSINESS OWNER","name":"Pierce, Franqui & Thomas, Shawn","parties":[{"name":"Shawn Thomas","uid":"8005730_104921506","displayUid":"8005730_104921506","firstName":"Shawn","lastName":"Thomas","acceptedAgreement":false,"customerID":"8005730","partyId":"104921506"},{"name":"Franqui Pierce","uid":"86690100","currency":{"active":true,"isocode":"USD","name":"US Dollar","symbol":"$"},"displayUid":"86690100","firstName":"Franqui","language":{"active":true,"isocode":"en_US","name":"English","nativeName":"English"},"lastName":"Pierce","acceptedAgreement":true,"customerID":"8005730","partyId":"86690100"}],"primaryParty":{"name":"Franqui Pierce","uid":"86690100","currency":{"active":true,"isocode":"USD","name":"US Dollar","symbol":"$"},"displayUid":"86690100","firstName":"Franqui","language":{"active":true,"isocode":"en_US","name":"English","nativeName":"English"},"lastName":"Pierce","acceptedAgreement":true,"customerID":"8005730","partyId":"86690100"},"status":"ACTIVE","uid":"8005730"},"calculated":true,"code":"3167465528","contactInformation":{"email":"FRANQUI.PIERCE@YAHOO.COM","phone":"15712859023","phoneCountryCode":"1","phoneCountryIso":"US","phoneType":"MOBILE_PHONE"},"entries":[],"exemptFromTax":false,"freeShippingApplied":false,"freightForwarder":false,"grandTotalLoyaltyPoints":0,"guid":"ce444b8a-9358-483d-abc1-bd38ab2e601b","hasBackOrderPromotionEntries":false,"hasOrderPromotionEntries":false,"isBackOrder":false,"isLoyaltyCartRecipient":false,"loyalty":false,"net":true,"orderDiscounts":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"orderLevelTaxDetails":[],"orderLevelTaxDetailsForBOProducts":[],"orderPriceData":{"businessVolume":0.0,"deliveryAmount":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"loyaltyReward":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"loyaltyRewardPoints":0,"pointValue":0.0,"postagePresetFee":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"promotionsAmount":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"savingsAmount":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"subtotalAmount":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"taxAmount":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"taxDeliveryAmount":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalPrice":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalPriceWithTax":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalServiceFeesPrice":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"awardedBusinessVolume":0.0,"awardedPointValue":0.0,"retailProfit":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalShippableEffectivePriceForTax":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0}},"orderPromotionDetailsContainer":{"promotionDetails":[],"totalBusinessVolume":0.0,"totalPointValue":0.0,"totalSavings":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0}},"productDiscounts":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"promotionDetailsContainer":{"promotionDetails":[],"totalBusinessVolume":0.0,"totalPointValue":0.0,"totalSavings":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0}},"redemption":{},"savings":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"selfConsumptionOrder":false,"serviceFeeEntries":[],"shipTo":{"name":"Franqui Pierce","uid":"86690100","currency":{"active":true,"isocode":"USD","name":"US Dollar","symbol":"$"},"displayUid":"86690100","firstName":"Franqui","language":{"active":true,"isocode":"en_US","name":"English","nativeName":"English"},"lastName":"Pierce","acceptedAgreement":true,"customerID":"8005730","partyId":"86690100"},"shipToAccount":{"accountType":"AMWAY BUSINESS OWNER","name":"Pierce, Franqui & Thomas, Shawn","status":"ACTIVE","uid":"8005730"},"store":"lynx","subTotal":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"subtotalWithoutPromotions":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"threatMetrixSessionID":"TMX_3167465528_ab205ba2-984b-4f47-9a36-986082a9ea69","totalBOLoyaltyPoints":0,"totalBackOrderDepositChargesPrice":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalBackOrderServiceFeesPrice":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalBeverageFeesPrice":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalBusinessVolume":"0.0","totalDeliveryCostTax":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalDiscounts":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalEffectivePriceForTax":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalItems":0,"totalLoyaltyPoints":0,"totalOrderEntriesTax":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalPointValue":"0.0","totalPrice":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalPriceWithTax":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalServiceFeesPrice":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalShippableDepositChargesPrice":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalShippableServiceFeesPrice":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalTax":{"currencyIso":"USD","formattedValue":"$0.00","priceType":"BUY","value":0.0},"totalWeight":0.0,"unappliedPromotions":[],"user":{"name":"Franqui Pierce","uid":"86690100"},"freightForwardingAvailable":false,"potentialOrderPromotions":[],"potentialProductPromotions":[],"totalUnitCount":0}
+host = amway04-01-amer01-prod-INTEGRATIONS-f6088ea4-f17f-4a73-b535-3763ef68a090source = /srv/hybris/log/integration/integration-inbound.logsourcetype = hybris_ana_integration-inbound
+
+
+
+
+INC0813566
+ In this we get the 3 images from which we got to know that he has paid the amount for renewal of the contract 
+ but his status is showing inactive so we need to fix tha data manually 
+ 
+ 
+ qstn ye hai ki wo data humne kaha jaa ke fix kiya humne wo paid kaha jaa ke thik kiya jisse wo customer ko dikh jae 
+ 
+ what is child incidents 
+ time worked likha tha kyu
+ 
+ 
+ 
+ INC0813565
+7190631--ibo
+ Hi Scott, can you please check mismatch party between magic and hybris ?
+  how he knows that the data is mismatched between magic and hybris
+  dusri baat ye hmra login partner to Hybris hai to mdms pe kyu dekhe hum
+  isne to login bhi web se kiya 
+  
+  how can i see what data is fixed 
+  
+ 
+
+ INC0813558
+ iss incident me likha tha ki we face this issue regulary to why this is under MIM
+ what i understood in this that we can only do a sinle thing just to check that IBO in splunk ki what is happening in calls
+ and if they have 
+
+Hybris - Cart was Hybris - eCommerce - ANA
+  firstly jo lga ki wo cart ka issue hai but it was happening to many people so we hacve made it ana ka incident banaya
+  
+  
+  INC0813552
+  test issue 
+  desktop or mobile web version me mobile likha hai
+  invoice number 
+  referece invoice number
+  smjh me jo aaya 
+  ki order return create hua approve hua then label bana ki bhaiya done but refund nhi hua
+   2 swal hai ispe ki  hume zrurt ji kyu padi isko manually krne ki 
+   aur dusra iska solution kya diya 
+    incident task 
+	sla task
+  
+  
+  
+  cmp/zendesk
+  
+  1671045
+  
+  
+  
+  
+  INC0810197
+     dmitry have solved that case 
+	 Customer 110258625 registered as an IBO on 12-31 and was charged $62 four times! Also her account is still showing up as a customer account, instead of an IBO.
+     Please see screenshot of order history
+     Customer Service please call customer when resolved.
+	 it was a bug in  mdms which was fixed 
+	 
+	 was it deducted four times ot user just saw four instances of that in history 
+	 
+	 and will the customer get the refund for other 3 orders and what was the work around fo that 
+	 is that customrs mistake or it was mdms mistake 
+	 
+	 
+	 INC0808439 -- order process pass rha tha 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+  
+ 
+ i need a abo jiske saath mai backoffice me kuch bhi karu kisi ko koi frak naa pade
+  
+
+ 
